@@ -1,0 +1,15 @@
+public class BatallaPokemon {
+    public static void main(String[] args) {
+        // Crear instancias de las clases hijas
+        PokemonGhost Haunter = new PokemonGhost("Haunter");
+        Pokemon Vaporeon = new Pokemon("Vaporeon", "Agua", 10);
+
+        // Hacer que Haunter ataque a Vaporeon
+        Haunter.atacar("Maldición Curse",Vaporeon);
+
+        // Hacer que Vaporeon ataque a Haunter
+        Vaporeon.atacar("Pistola de agua", Haunter);
+
+        // Imprimir los puntos de vida actuales de cada Pokémon
+        System.out.println(Haunter.getNombre() + ": HP " + Haunter.getHP());
+        System.out.println(Vaporean.getNombre() + ": HP " + Vaporean.getHP());
